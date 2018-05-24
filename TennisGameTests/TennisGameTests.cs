@@ -23,20 +23,31 @@ namespace TennisGame.Tests
         [TestMethod()]
         public void Thirty_Love()
         {
-            _tennisGame.FirstPlayerGetScore();
-            _tennisGame.FirstPlayerGetScore();
+            FirstPlayerGetScoreTimes(2);
             TheScoreShouldBe("Thirty-Love");
+        }
+
+        private void FirstPlayerGetScoreTimes(int times)
+        {
+            for (int i = 0; i < times; i++)
+            {
+                _tennisGame.FirstPlayerGetScore();
+            }
         }
 
         [TestMethod()]
         public void Forty_Love()
         {
-            _tennisGame.FirstPlayerGetScore();
-            _tennisGame.FirstPlayerGetScore();
-            _tennisGame.FirstPlayerGetScore();
+            FirstPlayerGetScoreTimes(3);
             TheScoreShouldBe("Forty-Love");
         }
 
+        [TestMethod()]
+        public void Love_Fifteen()
+        {
+            _tennisGame.SecondPlayerGetScore();
+            TheScoreShouldBe("Love-Fifteen");
+        }
 
         private void TheScoreShouldBe(string expected)
         {
