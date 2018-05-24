@@ -8,16 +8,38 @@ namespace TennisGame.Tests
         private TennisGame _tennisGame = new TennisGame("kyo", "vim");
 
         [TestMethod()]
+        public void Fifteen_Love()
+        {
+            _tennisGame.FirstPlayerGetScore();
+            TheScoreShouldBe("Fifteen-Love");
+        }
+
+        [TestMethod()]
+        public void Forty_Love()
+        {
+            FirstPlayerGetScoreTimes(3);
+            TheScoreShouldBe("Forty-Love");
+        }
+
+        [TestMethod()]
         public void Love_All()
         {
             TheScoreShouldBe("Love-All");
         }
 
         [TestMethod()]
-        public void Fifteen_Love()
+        public void Love_Fifteen()
         {
-            _tennisGame.FirstPlayerGetScore();
-            TheScoreShouldBe("Fifteen-Love");
+            _tennisGame.SecondPlayerGetScore();
+            TheScoreShouldBe("Love-Fifteen");
+        }
+
+        [TestMethod()]
+        public void Love_Thirty()
+        {
+            _tennisGame.SecondPlayerGetScore();
+            _tennisGame.SecondPlayerGetScore();
+            TheScoreShouldBe("Love-Thirty");
         }
 
         [TestMethod()]
@@ -33,20 +55,6 @@ namespace TennisGame.Tests
             {
                 _tennisGame.FirstPlayerGetScore();
             }
-        }
-
-        [TestMethod()]
-        public void Forty_Love()
-        {
-            FirstPlayerGetScoreTimes(3);
-            TheScoreShouldBe("Forty-Love");
-        }
-
-        [TestMethod()]
-        public void Love_Fifteen()
-        {
-            _tennisGame.SecondPlayerGetScore();
-            TheScoreShouldBe("Love-Fifteen");
         }
 
         private void TheScoreShouldBe(string expected)

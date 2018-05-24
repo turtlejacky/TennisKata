@@ -33,6 +33,10 @@ namespace TennisGame
             {
                 return "Love-Fifteen";
             }
+            else if (_secondPlayerScoreTimes == 2)
+            {
+                return "Love-Thirty";
+            }
             return "Love-All";
         }
 
