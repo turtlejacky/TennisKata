@@ -29,7 +29,10 @@ namespace TennisGame
             {
                 return scoreLookup[_firstPlayerScoreTimes] + "-" + scoreLookup[_secondPlayerScoreTimes];
             }
-            return "Love-All";
+            else
+            {
+                return scoreLookup[_firstPlayerScoreTimes] + "-All";
+            }
         }
 
         public void FirstPlayerGetScore()

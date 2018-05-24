@@ -37,9 +37,24 @@ namespace TennisGame.Tests
         [TestMethod()]
         public void Love_Thirty()
         {
-            _tennisGame.SecondPlayerGetScore();
-            _tennisGame.SecondPlayerGetScore();
+            SecondPlayerGetScoreTimes(2);
             TheScoreShouldBe("Love-Thirty");
+        }
+
+        private void SecondPlayerGetScoreTimes(int times)
+        {
+            for (int i = 0; i < times; i++)
+            {
+                _tennisGame.SecondPlayerGetScore();
+            }
+        }
+
+        [TestMethod()]
+        public void Fifteen_All()
+        {
+            _tennisGame.FirstPlayerGetScore();
+            _tennisGame.SecondPlayerGetScore();
+            TheScoreShouldBe("Fifteen-All");
         }
 
         [TestMethod()]
