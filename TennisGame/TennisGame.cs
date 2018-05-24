@@ -24,18 +24,10 @@ namespace TennisGame
                 {2,"Thirty" },
                 {3,"Forty" },
             };
-            if (_firstPlayerScoreTimes != 0)
-            {
-                return scoreLookup[_firstPlayerScoreTimes] + "-" + "Love";
-            }
 
-            if (_secondPlayerScoreTimes == 1)
+            if (_firstPlayerScoreTimes != _secondPlayerScoreTimes)
             {
-                return "Love-Fifteen";
-            }
-            else if (_secondPlayerScoreTimes == 2)
-            {
-                return "Love-Thirty";
+                return scoreLookup[_firstPlayerScoreTimes] + "-" + scoreLookup[_secondPlayerScoreTimes];
             }
             return "Love-All";
         }
