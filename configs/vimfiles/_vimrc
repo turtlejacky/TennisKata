@@ -43,6 +43,7 @@ nmap zt :vsc ReSharper.ReSharper_GotoType<CR>
 nmap zro :vsc ReSharper.ReSharper_Move<CR>
 nmap zsc :vsc ReSharper.ReSharper_ShowCodeStructure<CR> 
 nmap zcs :vsc ReSharper.ReSharper_ChangeSignature<CR>
+nmap gcc :vsc ReSharper.ReSharper_LineComment<CR>
 
 nmap zpm :vsc ReSharper.ReSharper_PasteMultiple<CR>
 imap zpm <Esc>:vsc ReSharper.ReSharper_PasteMultiple<CR>

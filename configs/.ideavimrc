@@ -1,14 +1,20 @@
 let mapleader = "z" 
-:map zrr :action RenameElement<CR>
-:map zrm :action ExtractMethod<CR>
-:map zrp :action IntroduceParameter<CR>
-:map zri :action InlineVariable<CR>
-:map zrv :action IntroVariable<CR>
-:map zrf :action IntroduceField<CR>
+nmap zso :source C:\Users\kyo.lai82\.ideavimrc <CR>
+map <leader>rt :action RenameElement<CR>
+map <leader>rm :action ExtractMethod<CR>
+map <leader>rp :action IntroduceParameter<CR>
+map <leader>ri :action InlineVariable<CR>
+map <leader>rv :action IntroVariable<CR>
+map <leader>rf :action IntroduceField<CR>
+map <leader>f :action GotoDeclaration<CR>
+nmap <leader>cf :action GotoImplementation<CR>
+nmap <leader>k :action Back<CR>
+nmap <leader>j :action Forward<CR>
+nmap gcc :action CommentByLineComment<CR>
 
-:imap jj <Esc>
-:nmap <BS> a<BS>
-:nmap hh ^
-:nmap <leader>h ^
-:nmap ll $
-:nmap <leader>d yyp
+imap jj <Esc>
+nmap <BS> a<BS>
+nmap hh ^
+nmap <leader>h ^
+nmap ll $
+nmap <leader>d yyp

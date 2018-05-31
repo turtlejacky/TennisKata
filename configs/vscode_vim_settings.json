@@ -2,8 +2,10 @@
     "editor.formatOnPaste": true,
     "window.zoomLevel": 0,
     "workbench.colorCustomizations": {
-        "editorLineNumber.foreground": "#999999"
+        "editorLineNumber.foreground": "#ffe600"
     },
+    "editor.lineNumbers": "relative",
+
     "vim.easymotion": true,
     "vim.sneak": true,
     "vim.incsearch": true,
@@ -26,10 +28,7 @@
                 ";"
             ],
             "after": [
-                "<Esc>",
-                "$",
-                "a",
-                ";"
+                "<Esc>","$","a",";"
             ]
         },
         {
@@ -49,9 +48,7 @@
                 "h"
             ],
             "after": [
-                "<Esc>",
-                "^",
-                "i"
+                "<Esc>","^","i"
             ]
         },
         {
@@ -69,11 +66,11 @@
     ],
     "vim.otherModesKeyBindingsNonRecursive": [
         {
-            "before": [
+            "before":[
                 "<leader>",
                 "l"
             ],
-            "after": [
+            "after":[
                 "$"
             ]
         },
@@ -83,16 +80,15 @@
                 "c"
             ],
             "after": [
-                "^",
-                "C"
+                "^","C"
             ]
         },
         {
-            "before": [
+            "before":[
                 "<leader>",
                 "h"
             ],
-            "after": [
+            "after":[
                 "^"
             ]
         },
@@ -101,8 +97,7 @@
                 "s"
             ],
             "after": [
-                "a",
-                "<BS>"
+                "a","<BS>"
             ]
         },
         {
@@ -111,10 +106,7 @@
                 ";"
             ],
             "after": [
-                "$",
-                "a",
-                ";",
-                "<Esc>"
+                "$","a",";","<Esc>"
             ]
         },
         {
@@ -141,13 +133,26 @@
         },
         {
             "before": [
-                "<leader>",
+                "<leader>", 
                 "m"
             ],
             "after": [],
             "commands": [
                 {
                     "command": "editor.action.formatDocument"
+                }
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "c",
+                "c"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.commentLine"
                 }
             ]
         }
