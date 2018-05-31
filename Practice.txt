@@ -4,12 +4,46 @@ all expected vim.vim;
 practiceMakePerfect.vim;
 practicePracticePractice.vim;
 practice is good.vim;
-pracitce please~~~~~~.vim;
+practice please~~~~~~.vim;
+practice! no pain no gain.vim;
+practiceMakePerfect.vim;
+practicePracticePractice.vim;
+practice is good.vim;
+practice please~~~~~~.vim;
+practice! no pain no gain.vim;
+practiceMakePerfect.vim;
+practicePracticePractice.vim;
+practice is good.vim;
+practice please~~~~~~.vim;
+practice! no pain no gain.vim;
+practiceMakePerfect.vim;
+practicePracticePractice.vim;
+practice is good.vim;
+practice please~~~~~~.vim;
+practice! no pain no gain.vim;
+practiceMakePerfect.vim;
+practicePracticePractice.vim;
+practice is good.vim;
+practice please~~~~~~.vim;
 practice! no pain no gain.vim;
 
 2.make below text to goldVim
-all expected vim
+all expected vim.vim
 
+saveVim
+leftVim
+goodVim
+eastVim
+WestVim
+lookVim
+testVim
+saveVim
+leftVim
+goodVim
+eastVim
+WestVim
+lookVim
+testVim
 saveVim
 leftVim
 goodVim
