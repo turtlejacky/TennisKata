@@ -28,7 +28,7 @@ practice please~~~~~~.vim;
 practice! no pain no gain.vim;
 
 2.make below text to goldVim
-all expected vim.vim
+all expected vim.Vim
 
 saveVim
 leftVim
@@ -51,3 +51,26 @@ eastVim
 WestVim
 lookVim
 testVim
+
+3.clear all text in {}
+
+{adfskdf;up727p24234sdf}
+{sdfs3423rtrt4wfsdfadf}
+{sdfsdfgdfgdfgdf}
+{asdgdfgdgdfgdfgfgdgsdfg42535fgfsdf}
+{3948rlkdjfg;lkvn23khl2h,.fmlskj;gjsd;fkgj}
+{928934kdjfvkxm,cm;lkjfw34;jkhg;skdygfpidfygkhg;}
+{sdkgfj;kj2ri3jl4kjfnz,n,flajhdsflkahjsdf0}
+{adfskdf;up727p24234sdf}
+{sdfs3423rtrt4wfsdfadf}
+{sdfsdfgdfgda1123fgdf}
+{asdgdfgdgdfgdfgfgddgsdfg42531235fgfsdf}
+{3948rlkdjfg;lkvn23123khl2h,.fmlskj;gjsd;fkgj}
+{928934kdjfvkxm,cm;lkjfw34;jkh323g;skdygfpidfygkhg;}
+{sdkgfj;kj2ri3jl4kjfnz,n,flajhdsflkahjsdf0}{adfskdf;up727p24234sdf}
+{sdfs3423rtrt4wfsd1fadf}
+{sdfsdfgdfgddsffgdf}
+{asdgdfgdgdfgdfgfgd12312gsdfg42535fgfsdf}
+{3948rlkdjfg;lkvn23khl2h,.fmlskj;gjsd;fkgj}
+{928934kdjfvkxm,cm;lkjaffw34;jkhg;skdygfpidfygkhg;}
+{sdkgfj;kj2ri3jl4kjfnz,n,flajhdsflkahjsdf0}
