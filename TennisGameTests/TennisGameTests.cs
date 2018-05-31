@@ -112,6 +112,22 @@ namespace TennisGame.Tests
         }
 
         [TestMethod()]
+        public void FirstPlayer_Win_5_3()
+        {
+            FirstPlayerGetScoreTimes(5);
+            SecondPlayerGetScoreTimes(3);
+            TheScoreShouldBe("kyo Win");
+        }
+
+        [TestMethod()]
+        public void Deuce_5_5()
+        {
+            FirstPlayerGetScoreTimes(5);
+            SecondPlayerGetScoreTimes(5);
+            TheScoreShouldBe("Deuce");
+        }
+
+        [TestMethod()]
         public void Thirty_Love()
         {
             FirstPlayerGetScoreTimes(2);
