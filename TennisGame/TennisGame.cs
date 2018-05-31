@@ -10,6 +10,14 @@ namespace TennisGame
         private int _firstPlayerScoreTimes;
         private int _secondPlayerScoreTimes;
 
+        private Dictionary<int, string> _scoreLookup = new Dictionary<int, string>()
+        {
+            {0,"Love" },
+            {1,"Fifteen" },
+            {2,"Thirty" },
+            {3,"Forty" },
+        };
+
         public TennisGame(string firstPlayer, string secondPlayer)
         {
             _firstPlayerName = firstPlayer;
@@ -18,33 +26,52 @@ namespace TennisGame
 
         public string Score()
         {
-            var scoreLookup = new Dictionary<int, string>()
-            {
-                {0,"Love" },
-                {1,"Fifteen" },
-                {2,"Thirty" },
-                {3,"Forty" },
-            };
+            return IsScoreDifferent() ? (IsPlayerReadyToWin() ? AdvScore() : NormalScore()) : (IsDeuce() ? Deuce() : SameScore());
+        }
 
-            if (_firstPlayerScoreTimes != _secondPlayerScoreTimes)
-            {
-                if (_firstPlayerScoreTimes > 3 || _secondPlayerScoreTimes > 3)
-                {
-                    var result = "";
-                    var compare = _firstPlayerScoreTimes - _secondPlayerScoreTimes;
-                    result = Math.Abs(compare) > 1 ? " Win" : " Adv";
-                    return compare > 0 ? _firstPlayerName + result : _secondPlayerName + result;
-                }
-                return scoreLookup[_firstPlayerScoreTimes] + " " + scoreLookup[_secondPlayerScoreTimes];
-            }
-            else
-            {
-                if (_firstPlayerScoreTimes >= 3)
-                {
-                    return "Deuce";
-                }
-                return scoreLookup[_firstPlayerScoreTimes] + " All";
-            }
+        private string SameScore()
+        {
+            return _scoreLookup[_firstPlayerScoreTimes] + " All";
+        }
+
+        private static string Deuce()
+        {
+            return "Deuce";
+        }
+
+        private bool IsDeuce()
+        {
+            return _firstPlayerScoreTimes >= 3;
+        }
+
+        private string NormalScore()
+        {
+            return _scoreLookup[_firstPlayerScoreTimes] + " " + _scoreLookup[_secondPlayerScoreTimes];
+        }
+
+        private string AdvScore()
+        {
+            return AdvPlayerName() + (IsWin() ? " Win" : " Adv");
+        }
+
+        private string AdvPlayerName()
+        {
+            return (_firstPlayerScoreTimes - _secondPlayerScoreTimes > 0 ? _firstPlayerName : _secondPlayerName);
+        }
+
+        private bool IsWin()
+        {
+            return Math.Abs(_firstPlayerScoreTimes - _secondPlayerScoreTimes) > 1;
+        }
+
+        private bool IsPlayerReadyToWin()
+        {
+            return _firstPlayerScoreTimes > 3 || _secondPlayerScoreTimes > 3;
+        }
+
+        private bool IsScoreDifferent()
+        {
+            return _firstPlayerScoreTimes != _secondPlayerScoreTimes;
         }
 
         public void FirstPlayerGetScore()
