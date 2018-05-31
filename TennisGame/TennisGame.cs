@@ -31,15 +31,15 @@ namespace TennisGame
                 {
                     if (_secondPlayerScoreTimes < 3)
                     {
-                        return _firstPlayerName + "-win";
+                        return _firstPlayerName + " win";
                     }
-                    return $"{_firstPlayerName}-Adv";
+                    return $"{_firstPlayerName} Adv";
                 }
                 else if (_secondPlayerScoreTimes > 3)
                 {
-                    return $"{_secondPlayerName}-Adv";
+                    return $"{_secondPlayerName} Adv";
                 }
-                return scoreLookup[_firstPlayerScoreTimes] + "-" + scoreLookup[_secondPlayerScoreTimes];
+                return scoreLookup[_firstPlayerScoreTimes] + " " + scoreLookup[_secondPlayerScoreTimes];
             }
             else
             {
@@ -47,7 +47,7 @@ namespace TennisGame
                 {
                     return "Deuce";
                 }
-                return scoreLookup[_firstPlayerScoreTimes] + "-All";
+                return scoreLookup[_firstPlayerScoreTimes] + " All";
             }
         }
 

@@ -11,34 +11,34 @@ namespace TennisGame.Tests
         public void Fifteen_Love()
         {
             _tennisGame.FirstPlayerGetScore();
-            TheScoreShouldBe("Fifteen-Love");
+            TheScoreShouldBe("Fifteen Love");
         }
 
         [TestMethod()]
         public void Forty_Love()
         {
             FirstPlayerGetScoreTimes(3);
-            TheScoreShouldBe("Forty-Love");
+            TheScoreShouldBe("Forty Love");
         }
 
         [TestMethod()]
         public void Love_All()
         {
-            TheScoreShouldBe("Love-All");
+            TheScoreShouldBe("Love All");
         }
 
         [TestMethod()]
         public void Love_Fifteen()
         {
             _tennisGame.SecondPlayerGetScore();
-            TheScoreShouldBe("Love-Fifteen");
+            TheScoreShouldBe("Love Fifteen");
         }
 
         [TestMethod()]
         public void Love_Thirty()
         {
             SecondPlayerGetScoreTimes(2);
-            TheScoreShouldBe("Love-Thirty");
+            TheScoreShouldBe("Love Thirty");
         }
 
         private void SecondPlayerGetScoreTimes(int times)
@@ -54,7 +54,7 @@ namespace TennisGame.Tests
         {
             _tennisGame.FirstPlayerGetScore();
             _tennisGame.SecondPlayerGetScore();
-            TheScoreShouldBe("Fifteen-All");
+            TheScoreShouldBe("Fifteen All");
         }
 
         [TestMethod()]
@@ -62,7 +62,7 @@ namespace TennisGame.Tests
         {
             FirstPlayerGetScoreTimes(2);
             SecondPlayerGetScoreTimes(2);
-            TheScoreShouldBe("Thirty-All");
+            TheScoreShouldBe("Thirty All");
         }
 
         [TestMethod()]
@@ -86,7 +86,7 @@ namespace TennisGame.Tests
         {
             FirstPlayerGetScoreTimes(4);
             SecondPlayerGetScoreTimes(3);
-            TheScoreShouldBe("kyo-Adv");
+            TheScoreShouldBe("kyo Adv");
         }
 
         [TestMethod()]
@@ -94,21 +94,21 @@ namespace TennisGame.Tests
         {
             FirstPlayerGetScoreTimes(3);
             SecondPlayerGetScoreTimes(4);
-            TheScoreShouldBe("vim-Adv");
+            TheScoreShouldBe("vim Adv");
         }
 
         [TestMethod()]
         public void FirstPlayer_Win_4_0()
         {
             FirstPlayerGetScoreTimes(4);
-            TheScoreShouldBe("kyo-win");
+            TheScoreShouldBe("kyo win");
         }
 
         [TestMethod()]
         public void Thirty_Love()
         {
             FirstPlayerGetScoreTimes(2);
-            TheScoreShouldBe("Thirty-Love");
+            TheScoreShouldBe("Thirty Love");
         }
 
         private void FirstPlayerGetScoreTimes(int times)
