@@ -1,0 +1,19 @@
+1.replace all text befor . to vim
+all expected vim.vim;
+
+practiceMakePerfect.vim;
+practicePracticePractice.vim;
+practice is good.vim;
+pracitce please~~~~~~.vim;
+practice! no pain no gain.vim;
+
+2.make below text to goldVim
+all expected vim
+
+saveVim
+leftVim
+goodVim
+eastVim
+WestVim
+lookVim
+testVim
