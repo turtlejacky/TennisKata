@@ -82,6 +82,14 @@ namespace TennisGame.Tests
         }
 
         [TestMethod()]
+        public void FirstPlayer_Adv_4_3()
+        {
+            FirstPlayerGetScoreTimes(4);
+            SecondPlayerGetScoreTimes(3);
+            TheScoreShouldBe("kyo-Adv");
+        }
+
+        [TestMethod()]
         public void Thirty_Love()
         {
             FirstPlayerGetScoreTimes(2);
