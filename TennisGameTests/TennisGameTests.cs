@@ -101,14 +101,14 @@ namespace TennisGame.Tests
         public void FirstPlayer_Win_4_0()
         {
             FirstPlayerGetScoreTimes(4);
-            TheScoreShouldBe("kyo win");
+            TheScoreShouldBe("kyo Win");
         }
 
         [TestMethod()]
         public void SecondPlayer_Win_0_4()
         {
             SecondPlayerGetScoreTimes(4);
-            TheScoreShouldBe("vim win");
+            TheScoreShouldBe("vim Win");
         }
 
         [TestMethod()]
