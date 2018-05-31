@@ -29,7 +29,15 @@ namespace TennisGame
             {
                 if (_firstPlayerScoreTimes > 3)
                 {
+                    if (_secondPlayerScoreTimes < 3)
+                    {
+                        return _firstPlayerName + "-win";
+                    }
                     return $"{_firstPlayerName}-Adv";
+                }
+                else if (_secondPlayerScoreTimes > 3)
+                {
+                    return $"{_secondPlayerName}-Adv";
                 }
                 return scoreLookup[_firstPlayerScoreTimes] + "-" + scoreLookup[_secondPlayerScoreTimes];
             }

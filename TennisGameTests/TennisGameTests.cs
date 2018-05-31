@@ -90,6 +90,21 @@ namespace TennisGame.Tests
         }
 
         [TestMethod()]
+        public void SecondPlayer_Adv_3_4()
+        {
+            FirstPlayerGetScoreTimes(3);
+            SecondPlayerGetScoreTimes(4);
+            TheScoreShouldBe("vim-Adv");
+        }
+
+        [TestMethod()]
+        public void FirstPlayer_Win_4_0()
+        {
+            FirstPlayerGetScoreTimes(4);
+            TheScoreShouldBe("kyo-win");
+        }
+
+        [TestMethod()]
         public void Thirty_Love()
         {
             FirstPlayerGetScoreTimes(2);
