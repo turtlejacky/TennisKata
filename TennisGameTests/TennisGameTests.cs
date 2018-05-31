@@ -105,6 +105,13 @@ namespace TennisGame.Tests
         }
 
         [TestMethod()]
+        public void SecondPlayer_Win_0_4()
+        {
+            SecondPlayerGetScoreTimes(4);
+            TheScoreShouldBe("vim win");
+        }
+
+        [TestMethod()]
         public void Thirty_Love()
         {
             FirstPlayerGetScoreTimes(2);

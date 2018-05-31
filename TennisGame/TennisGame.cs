@@ -37,6 +37,10 @@ namespace TennisGame
                 }
                 else if (_secondPlayerScoreTimes > 3)
                 {
+                    if (_firstPlayerScoreTimes < 3)
+                    {
+                        return _secondPlayerName + " win";
+                    }
                     return $"{_secondPlayerName} Adv";
                 }
                 return scoreLookup[_firstPlayerScoreTimes] + " " + scoreLookup[_secondPlayerScoreTimes];
