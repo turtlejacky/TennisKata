@@ -58,6 +58,30 @@ namespace TennisGame.Tests
         }
 
         [TestMethod()]
+        public void Thirty_All()
+        {
+            FirstPlayerGetScoreTimes(2);
+            SecondPlayerGetScoreTimes(2);
+            TheScoreShouldBe("Thirty-All");
+        }
+
+        [TestMethod()]
+        public void Deuce_3_3()
+        {
+            FirstPlayerGetScoreTimes(3);
+            SecondPlayerGetScoreTimes(3);
+            TheScoreShouldBe("Deuce");
+        }
+
+        [TestMethod()]
+        public void Deuce_4_4()
+        {
+            FirstPlayerGetScoreTimes(4);
+            SecondPlayerGetScoreTimes(4);
+            TheScoreShouldBe("Deuce");
+        }
+
+        [TestMethod()]
         public void Thirty_Love()
         {
             FirstPlayerGetScoreTimes(2);
