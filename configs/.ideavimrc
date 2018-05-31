@@ -1,0 +1,14 @@
+let mapleader = "z" 
+:map zrr :action RenameElement<CR>
+:map zrm :action ExtractMethod<CR>
+:map zrp :action IntroduceParameter<CR>
+:map zri :action InlineVariable<CR>
+:map zrv :action IntroVariable<CR>
+:map zrf :action IntroduceField<CR>
+
+:imap jj <Esc>
+:nmap <BS> a<BS>
+:nmap hh ^
+:nmap <leader>h ^
+:nmap ll $
+:nmap <leader>d yyp
