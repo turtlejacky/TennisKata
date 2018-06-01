@@ -64,6 +64,10 @@ nmap z. ^ireturn
 imap z. <Esc>^ireturn 
 nmap z; $a;<Esc>
 imap z; <Esc>$a;
+nmap z" ci"
+nmap z( ci(
+nmap z[ ci[
+nmap z{ ci{
 
 nmap ,p "0p
 nmap ,P "0P

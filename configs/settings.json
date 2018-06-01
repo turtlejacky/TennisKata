@@ -68,6 +68,50 @@
         {
             "before":[
                 "<leader>",
+                "["
+            ],
+            "after":[
+                "c",
+                "i",
+                "["
+            ]
+        },
+        {
+            "before":[
+                "<leader>",
+                "{"
+            ],
+            "after":[
+                "c",
+                "i",
+                "{"
+            ]
+        },
+        {
+            "before":[
+                "<leader>",
+                "("
+            ],
+            "after":[
+                "c",
+                "i",
+                "("
+            ]
+        },
+        {
+            "before":[
+                "<leader>",
+                "\""
+            ],
+            "after":[
+                "c",
+                "i",
+                "\""
+            ]
+        },
+        {
+            "before":[
+                "<leader>",
                 "l"
             ],
             "after":[

@@ -12,6 +12,11 @@ nmap <leader>k :action Back<CR>
 nmap <leader>j :action Forward<CR>
 nmap gcc :action CommentByLineComment<CR>
 
+nmap z" ci"
+nmap z( ci(
+nmap z[ ci[
+nmap z{ ci{
+
 imap jj <Esc>
 nmap <BS> a<BS>
 nmap hh ^
